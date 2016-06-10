@@ -1,7 +1,7 @@
 # dont add nytimes data to git repo
 docword.nytimes.txt
-M_nytimes.full_docs.mat
-M_nytimes.full_docs.mat.trunc.mat
+*M_nytimes.full_docs.mat
+*M_nytimes.full_docs.mat.trunc.mat
 
 # ignore vim swp files
 *.swp
