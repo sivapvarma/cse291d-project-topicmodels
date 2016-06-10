@@ -1,0 +1,281 @@
+starting robust spectral demo
+use down_datasets.sh to download nips and nytimes datasets from UCI ML repo
+preprocessing, translate from docword.txt to scipy format
+preprocessing: removing rare words and stopwords
+Number of words is  12419
+Number of documents is  1500
+New number of words is  2940
+New number of documents is  1500
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(1735, 'candidates')
+('Sum of entries in Q is ', 1.0)
+('Multiplying Q took ', '0.670870304107666', 'seconds')
+type(Q): <class 'numpy.ndarray'>
+rectifying Q now
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+type(C_star): <class 'numpy.matrixlib.defmatrix.matrix'>
+Test for Non-Negativity:  True
+Done rectifying!!
+('Q sum is', 1.0000355324168522)
+done reading documents
+anchors are:
+0 neuroscience
+1 part
+2 giles
+3 visual
+4 policy
+5 synapses
+6 iii
+7 membrane
+8 architecture
+9 retina
+begin threaded recovery with 8 processors
+0	47	0.657033110195
+1000	65	0.442369959687
+2000	55	0.501508254746
+done recovering
+neuroscience : implementation neuroscience application cognitive science theory processing navigation control planning 
+part : part cognitive science network theory signal speech control chip navigation 
+giles : network neural unit input training weight function set output error 
+visual : processing visual speech signal data recognition set network unit image 
+policy : function algorithm data set problem method vector parameter result point 
+synapses : neuron synaptic circuit synapses connection threshold function activity chip network 
+iii : iii planning navigation theory control science cognitive implementation transistor capacitor 
+membrane : spike firing circuit membrane voltage current cortex cortical control neural 
+architecture : algorithm architecture theory control science application weight neuron circuit expert 
+retina : input system output field pattern information neural signal motion direction 
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(1735, 'candidates')
+('Sum of entries in Q is ', 1.0)
+('Multiplying Q took ', '0.67057204246521', 'seconds')
+type(Q): <class 'numpy.ndarray'>
+rectifying Q now
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+type(C_star): <class 'numpy.matrixlib.defmatrix.matrix'>
+Test for Non-Negativity:  True
+Done rectifying!!
+('Q sum is', 1.0000355324168522)
+done reading documents
+anchors are:
+0 neuroscience
+1 part
+2 giles
+3 visual
+4 policy
+5 synapses
+6 iii
+7 membrane
+8 architecture
+9 retina
+10 inequality
+11 speech
+12 hopfield
+13 inhibition
+14 generalization
+15 word
+16 spike
+17 synapse
+18 regression
+19 reward
+begin threaded recovery with 8 processors
+0	178	0.316592471061
+1000	58	0.233550748994
+2000	45	0.173680697215
+done recovering
+neuroscience : implementation neuroscience application cognitive science processing theory navigation control planning 
+part : part cognitive science algorithm theory network control chip signal neural 
+giles : network unit neural weight input output hidden layer net function 
+visual : visual processing signal control network neural level system pathway modulation 
+policy : function policy algorithm bound problem data theorem convergence gradient reinforcement 
+synapses : neuron synapses synaptic input circuit neural system current output control 
+iii : iii planning theory navigation control science cognitive circuit transistor logic 
+membrane : membrane system input firing circuit neuron field current result information 
+architecture : algorithm architecture theory control science neural weight problem application node 
+retina : motion direction spatial orientation system frequency filter object signal eye 
+inequality : function algorithm data problem approximation vector parameter set result optimal 
+speech : speech processing signal network data image unit images object system 
+hopfield : function neural threshold input weight output system equation hopfield dynamic 
+inhibition : activity connection input chip inhibition network system delay firing neural 
+generalization : training error set generalization problem number neural result input weight 
+word : data input recognition set system training output word information image 
+spike : spike field information system noise map point response cortex parameter 
+synapse : neuron input network synapse neural synaptic circuit system output control 
+regression : data set method algorithm parameter vector point distribution result space 
+reward : function action reward data problem optimal distribution gaussian component vector 
+use down_datasets.sh to download nips and nytimes datasets from UCI ML repo
+preprocessing, translate from docword.txt to scipy format
+preprocessing: removing rare words and stopwords
+Number of words is  6906
+Number of documents is  3430
+New number of words is  1660
+New number of documents is  3430
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(798, 'candidates')
+('Sum of entries in Q is ', 1.0000000000000002)
+('Multiplying Q took ', '0.16828393936157227', 'seconds')
+type(Q): <class 'numpy.ndarray'>
+rectifying Q now
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+type(C_star): <class 'numpy.matrixlib.defmatrix.matrix'>
+Test for Non-Negativity:  True
+Done rectifying!!
+('Q sum is', 1.0001537956874762)
+done reading documents
+anchors are:
+0 clark
+1 parecommend
+2 troops
+3 trend
+4 seat
+5 kerrys
+6 braun
+7 deans
+8 fundraising
+9 baghdad
+begin threaded recovery with 8 processors
+0	298	0.449767315327
+1000	43	0.923300163797
+done recovering
+clark : edwards dean clark primary kerry gephardt lieberman democratic results iowa 
+parecommend : november house poll republicans governor electoral account polls senate vote 
+troops : bush iraq war administration president people bushs military american general 
+trend : poll kerry percent polls voters results lead numbers polling state 
+seat : senate elections house republican race democratic election state races republicans 
+kerrys : bush kerry general president john administration kerrys bushs campaign oct 
+braun : poll braun lieberman sharpton kucinich gephardt latest democratic iowa tracking 
+deans : dean democratic jan deans iowa candidates howard schaller feb media 
+fundraising : campaign party house democrats people media republicans democratic political million 
+baghdad : iraqi soldiers killed baghdad forces blades meteor iraqis iraq national 
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(798, 'candidates')
+('Sum of entries in Q is ', 1.0000000000000002)
+('Multiplying Q took ', '0.16028428077697754', 'seconds')
+type(Q): <class 'numpy.ndarray'>
+rectifying Q now
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+type(C_star): <class 'numpy.matrixlib.defmatrix.matrix'>
+Test for Non-Negativity:  True
+Done rectifying!!
+('Q sum is', 1.0001537956874762)
+done reading documents
+anchors are:
+0 clark
+1 parecommend
+2 troops
+3 trend
+4 seat
+5 kerrys
+6 braun
+7 deans
+8 fundraising
+9 baghdad
+10 commission
+11 error
+12 undecided
+13 faq
+14 blog
+15 vietnam
+16 army
+17 sharpton
+18 delay
+19 tax
+begin threaded recovery with 8 processors
+0	65	0.206059389707
+1000	123	0.528618500918
+done recovering
+clark : edwards clark dean primary democratic gephardt lieberman iowa feb results 
+parecommend : november house governor polls electoral poll parecommend account vote duderino 
+troops : iraq war troops military officials government american intelligence iraqi united 
+trend : percent poll voters polls trend lines lead state results gallup 
+seat : senate elections race republican house races seat percent primary democratic 
+kerrys : kerry bush general john kerrys campaign debate million nader democrats 
+braun : poll braun latest tracking lieberman dec gephardt jan iowa kucinich 
+deans : dean democratic jan deans iowa feb media howard schaller candidates 
+fundraising : campaign party democrats democratic million republicans money raised john gop 
+baghdad : war iraq iraqi killed baghdad soldiers forces american iraqis military 
+commission : administration white house war campaign commission people united country media 
+error : bush general poll voters election ohio senate oct vote nader 
+undecided : kerry undecided results poll polls zogby arg numbers edwards race 
+faq : november republicans senate account races electoral house voter governor faq 
+blog : blog media democrats democratic political party people set blogs email 
+vietnam : bush administration president bushs cheney war iraq george apr people 
+army : war army people soldiers news operations report ghraib political time 
+sharpton : sharpton kucinich lieberman gephardt dean democratic primary poll iowa parenthesis 
+delay : house delay elections state committee party republican congress time democrats 
+tax : bush general president republicans bushs aug oct republican election george 

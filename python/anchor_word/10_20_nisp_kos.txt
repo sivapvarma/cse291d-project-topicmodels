@@ -1,0 +1,221 @@
+starting robust spectral demo
+use down_datasets.sh to download nips and nytimes datasets from UCI ML repo
+preprocessing, translate from docword.txt to scipy format
+preprocessing: removing rare words and stopwords
+Number of words is  12419
+Number of documents is  1500
+New number of words is  2940
+New number of documents is  1500
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(1735, 'candidates')
+('Sum of entries in Q is ', 1.0)
+('Multiplying Q took ', '0.677471399307251', 'seconds')
+('Q sum is', 1.0)
+done reading documents
+anchors are:
+0 neuroscience
+1 part
+2 iii
+3 cognitive
+4 paul
+5 science
+6 architecture
+7 theory
+8 visual
+9 processing
+begin threaded recovery with 8 processors
+0	92	0.311545504546
+1000	82	0.30154032727
+2000	82	0.300208208901
+done recovering
+neuroscience : neuroscience implementation application navigation planning thomas eric alex andrew christopher 
+part : part network function input neural algorithm system set data training 
+iii : iii application implementation thomas planning andrew richard stephen david eric 
+cognitive : cognitive application implementation planning navigation thomas andrew stephen richard david 
+paul : network function input neural set system data training algorithm unit 
+science : science application control implementation planning navigation algorithm david category network 
+architecture : network algorithm function architecture neural input set data training problem 
+theory : network theory function neural input set data algorithm system training 
+visual : network input visual function neural system set data neuron unit 
+processing : processing network input neural function system set data output training 
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(1735, 'candidates')
+('Sum of entries in Q is ', 1.0)
+('Multiplying Q took ', '0.6736552715301514', 'seconds')
+('Q sum is', 1.0)
+done reading documents
+anchors are:
+0 neuroscience
+1 part
+2 iii
+3 cognitive
+4 paul
+5 science
+6 architecture
+7 theory
+8 visual
+9 processing
+10 policy
+11 head
+12 speaker
+13 spike
+14 character
+15 motion
+16 speech
+17 face
+18 chip
+19 classifier
+begin threaded recovery with 8 processors
+0	121	0.331904527171
+1000	61	0.209403626152
+2000	46	0.181302987923
+done recovering
+neuroscience : neuroscience implementation application planning navigation control henderson singh stephen andrew 
+part : part algorithm control navigation planning signal image processor search trial 
+iii : iii application realization circuit utility theories animal formalism theoretic phy 
+cognitive : cognitive application action implementation agent exploration plan connectionist environment hierarchy 
+paul : david michael john richard peter index author thomas paul william 
+science : science algorithm application representation level control memory pattern task structure 
+architecture : architecture algorithm network unit input weight problem output neural training 
+theory : theory function algorithm network data set neural result error point 
+visual : visual signal object image orientation neuron map field response cortex 
+processing : processing signal eye object position cortex attention images orientation movement 
+policy : function algorithm problem system set network result method data action 
+head : network system input direction neural head unit neuron function eye 
+speaker : network neural training unit input system recognition output data set 
+spike : neuron input network function spike neural pattern information firing system 
+character : network input neural unit training system output set function weight 
+motion : motion unit direction field point system image data input order 
+speech : speech signal system information word noise recognition filter acoustic output 
+face : network set data image neural function input training system unit 
+chip : network neural input output neuron system weight function circuit chip 
+classifier : network set data training function error classifier algorithm problem neural 
+use down_datasets.sh to download nips and nytimes datasets from UCI ML repo
+preprocessing, translate from docword.txt to scipy format
+preprocessing: removing rare words and stopwords
+Number of words is  6906
+Number of documents is  3430
+New number of words is  1660
+New number of documents is  3430
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(798, 'candidates')
+('Sum of entries in Q is ', 1.0000000000000002)
+('Multiplying Q took ', '0.16061782836914062', 'seconds')
+('Q sum is', 1.0000000000000002)
+done reading documents
+anchors are:
+0 braun
+1 baghdad
+2 barbero
+3 nader
+4 held
+5 delay
+6 pdf
+7 cheney
+8 million
+9 court
+begin threaded recovery with 8 processors
+0	59	0.294993199441
+1000	62	0.822530983663
+done recovering
+braun : dean edwards kerry primary clark poll democratic lieberman gephardt results 
+baghdad : iraq war bush people military iraqi news american administration time 
+barbero : november senate house poll republicans governor polls electoral account vote 
+nader : bush kerry nader general poll percent state party campaign voters 
+held : bush held house administration poll percent president general republican vote 
+delay : house elections delay senate republican democratic republicans race democrats party 
+pdf : kerry bush poll general results polls senate voters oct pdf 
+cheney : bush kerry cheney president general administration war iraq oct john 
+million : bush kerry million campaign democratic house general senate democrats dean 
+court : state bush court republicans house administration democrats time states senate 
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(798, 'candidates')
+('Sum of entries in Q is ', 1.0000000000000002)
+('Multiplying Q took ', '0.19551444053649902', 'seconds')
+('Q sum is', 1.0000000000000002)
+done reading documents
+anchors are:
+0 braun
+1 baghdad
+2 barbero
+3 nader
+4 held
+5 delay
+6 pdf
+7 cheney
+8 million
+9 court
+10 fox
+11 jobs
+12 deans
+13 illinois
+14 tax
+15 meteor
+16 liberalrakkasan
+17 tracking
+18 book
+19 gay
+begin threaded recovery with 8 processors
+0	91	0.473953149908
+1000	23	0.994382726628
+done recovering
+braun : dean clark edwards primary poll lieberman democratic gephardt kucinich sharpton 
+baghdad : iraq war military iraqi people bush american troops soldiers baghdad 
+barbero : november house senate governor account poll electoral republicans turnout polls 
+nader : bush kerry nader general poll ballot state voters percent campaign 
+held : bush held administration house vote poll president republican percent general 
+delay : house delay elections senate republican republicans committee race district democrats 
+pdf : kerry bush poll general results polls pdf voters trend oct 
+cheney : bush cheney kerry president general administration war iraq oct john 
+million : million bush kerry campaign money house general raised democratic senate 
+court : court state law supreme states administration texas election time years 
+fox : bush news fox kerry media general poll president administration campaign 
+jobs : bush jobs administration president general war iraq percent people bushs 
+deans : dean democratic primary edwards kerry clark campaign iowa gephardt jan 
+illinois : senate elections house race republican democratic democrats party state republicans 
+tax : bush administration tax president bushs general george percent iraq people 
+meteor : meteor blades time democratic primary party elections people poll media 
+liberalrakkasan : november vote republicans voting election poll general polls senate house 
+tracking : kerry poll polls tracking percent voters numbers results general polling 
+book : book media house time people campaign war political republicans elections 
+gay : republicans marriage gay general party people republican state time democrats 

@@ -1,6 +1,6 @@
 #!/bin/bash
 # download corpus
-for corpus in nips nytimes
+for corpus in nips kos
 do 
     echo "downloading UCI $corpus corpus"
     wget https://archive.ics.uci.edu/ml/machine-learning-databases/bag-of-words/vocab.$corpus.txt

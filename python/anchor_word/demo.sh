@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "starting robust spectral demo"
-for corpus in nips nytimes
+for corpus in nips kos
 do
     echo "use down_datasets.sh to download nips and nytimes datasets from UCI ML repo"
     # echo "downloading UCI $corpus corpus"
@@ -16,7 +16,7 @@ do
     python truncate_vocabulary.py M_$corpus.full_docs.mat vocab.$corpus.txt 50
     for loss in L2
     do
-        for K in 20 50
+        for K in 10 20
         do
             echo "learning with nonnegative recover method using $loss loss..."
             python learn_topics.py M_$corpus.full_docs.mat.trunc.mat settings.example vocab.$corpus.txt.trunc $K $loss demo_robust_$loss\_out.$corpus.$K
