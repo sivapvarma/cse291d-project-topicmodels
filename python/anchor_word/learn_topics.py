@@ -71,9 +71,13 @@ print((len(candidate_anchors), "candidates"))
 #forms Q matrix from document-word matrix
 Q = generate_Q_matrix(M)
 
-vocab_fh = open(vocab_file)
-vocab = vocab_fh.read().strip().split()
-vocab_fh.close()
+# vocab_fh = open(vocab_file)
+# vocab = vocab_fh.read().strip().split()
+# vocab_fh.close()
+vocab = []
+with open(vocab_file) as vfile:
+    for line in vfile:
+        vocab.append(line.strip())
 
 #check that Q sum is 1 or close to it
 print(("Q sum is", Q.sum()))

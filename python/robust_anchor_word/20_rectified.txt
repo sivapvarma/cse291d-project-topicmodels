@@ -1,0 +1,85 @@
+starting robust spectral demo
+use down_datasets.sh to download nips and nytimes datasets from UCI ML repo
+preprocessing, translate from docword.txt to scipy format
+preprocessing: removing rare words and stopwords
+Number of words is  12419
+Number of documents is  1500
+New number of words is  2940
+New number of documents is  1500
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(1735, 'candidates')
+('Sum of entries in Q is ', 1.0)
+('Multiplying Q took ', '0.6706032752990723', 'seconds')
+type(Q): <class 'numpy.ndarray'>
+rectifying Q now
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+type(C_star): <class 'numpy.matrixlib.defmatrix.matrix'>
+Test for Non-Negativity:  True
+Done rectifying!!
+('Q sum is', 1.0000355324168522)
+done reading documents
+anchors are:
+0 neuroscience
+1 part
+2 giles
+3 visual
+4 policy
+5 synapses
+6 iii
+7 membrane
+8 architecture
+9 retina
+10 inequality
+11 speech
+12 hopfield
+13 inhibition
+14 generalization
+15 word
+16 spike
+17 synapse
+18 regression
+19 reward
+begin threaded recovery with 8 processors
+0	178	0.316592471061
+1000	58	0.233550748994
+2000	45	0.173680697215
+done recovering
+neuroscience : implementation neuroscience application cognitive science processing theory navigation control planning 
+part : part cognitive science algorithm theory network control chip signal neural 
+giles : network unit neural weight input output hidden layer net function 
+visual : visual processing signal control network neural level system pathway modulation 
+policy : function policy algorithm bound problem data theorem convergence gradient reinforcement 
+synapses : neuron synapses synaptic input circuit neural system current output control 
+iii : iii planning theory navigation control science cognitive circuit transistor logic 
+membrane : membrane system input firing circuit neuron field current result information 
+architecture : algorithm architecture theory control science neural weight problem application node 
+retina : motion direction spatial orientation system frequency filter object signal eye 
+inequality : function algorithm data problem approximation vector parameter set result optimal 
+speech : speech processing signal network data image unit images object system 
+hopfield : function neural threshold input weight output system equation hopfield dynamic 
+inhibition : activity connection input chip inhibition network system delay firing neural 
+generalization : training error set generalization problem number neural result input weight 
+word : data input recognition set system training output word information image 
+spike : spike field information system noise map point response cortex parameter 
+synapse : neuron input network synapse neural synaptic circuit system output control 
+regression : data set method algorithm parameter vector point distribution result space 
+reward : function action reward data problem optimal distribution gaussian component vector 

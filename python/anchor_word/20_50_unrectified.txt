@@ -1,0 +1,436 @@
+starting robust spectral demo
+use down_datasets.sh to download nips and nytimes datasets from UCI ML repo
+preprocessing, translate from docword.txt to scipy format
+preprocessing: removing rare words and stopwords
+Number of words is  12419
+Number of documents is  1500
+New number of words is  2940
+New number of documents is  1500
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(1735, 'candidates')
+('Sum of entries in Q is ', 1.0)
+('Multiplying Q took ', '0.6753921508789062', 'seconds')
+('Q sum is', 1.0)
+done reading documents
+anchors are:
+0 neuroscience
+1 part
+2 iii
+3 cognitive
+4 paul
+5 science
+6 architecture
+7 theory
+8 visual
+9 processing
+10 policy
+11 head
+12 speaker
+13 spike
+14 character
+15 motion
+16 speech
+17 face
+18 chip
+19 classifier
+begin threaded recovery with 8 processors
+0	121	0.331904527171
+1000	61	0.209403626152
+2000	46	0.181302987923
+done recovering
+neuroscience : neuroscience implementation application planning navigation control henderson singh stephen andrew 
+part : part algorithm control navigation planning signal image processor search trial 
+iii : iii application realization circuit utility theories animal formalism theoretic phy 
+cognitive : cognitive application action implementation agent exploration plan connectionist environment hierarchy 
+paul : david michael john richard peter index author thomas paul william 
+science : science algorithm application representation level control memory pattern task structure 
+architecture : architecture algorithm network unit input weight problem output neural training 
+theory : theory function algorithm network data set neural result error point 
+visual : visual signal object image orientation neuron map field response cortex 
+processing : processing signal eye object position cortex attention images orientation movement 
+policy : function algorithm problem system set network result method data action 
+head : network system input direction neural head unit neuron function eye 
+speaker : network neural training unit input system recognition output data set 
+spike : neuron input network function spike neural pattern information firing system 
+character : network input neural unit training system output set function weight 
+motion : motion unit direction field point system image data input order 
+speech : speech signal system information word noise recognition filter acoustic output 
+face : network set data image neural function input training system unit 
+chip : network neural input output neuron system weight function circuit chip 
+classifier : network set data training function error classifier algorithm problem neural 
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(1735, 'candidates')
+('Sum of entries in Q is ', 1.0)
+('Multiplying Q took ', '0.6896817684173584', 'seconds')
+('Q sum is', 1.0)
+done reading documents
+anchors are:
+0 neuroscience
+1 part
+2 iii
+3 cognitive
+4 paul
+5 science
+6 architecture
+7 theory
+8 visual
+9 processing
+10 policy
+11 head
+12 speaker
+13 spike
+14 character
+15 motion
+16 speech
+17 face
+18 chip
+19 classifier
+20 control
+21 boolean
+22 teacher
+23 missing
+24 sound
+25 controller
+26 view
+27 kernel
+28 word
+29 orientation
+30 expert
+31 batch
+32 motor
+33 clustering
+34 winner
+35 hopfield
+36 channel
+37 convex
+38 member
+39 rules
+40 letter
+41 user
+42 carlo
+43 penalty
+44 robot
+45 contour
+46 operator
+47 synapses
+48 loss
+49 rbf
+begin threaded recovery with 8 processors
+0	75	0.233058235073
+1000	78	0.108072644659
+2000	72	0.182623824193
+done recovering
+neuroscience : neuroscience application implementation navigation planning algorithm hierarchy matching circuit zemel 
+part : part algorithm signal application problem implementation memory parallel information processor 
+iii : iii field distribution probability bound approximation examples equation statistical order 
+cognitive : cognitive connectionist action representation level structure category constraint grammar language 
+paul : david michael john richard peter index author thomas paul eric 
+science : science representation level structure category subject constraint goal set environment 
+architecture : architecture algorithm unit problem step weight pattern gradient node vector 
+theory : theory approximation case evidence ill peak region effect probability term 
+visual : visual signal image level object spatial feature features activity images 
+processing : processing signal object information eye position target attention feature layer 
+policy : action policy algorithm function optimal reinforcement problem step states reward 
+head : head direction system eye velocity input gain position rotation rate 
+speaker : network speaker recognition training neural performance system feature vector acoustic 
+spike : neuron spike firing rate information spikes train noise stimulus potential 
+character : network character input neural output training recognition layer system field 
+motion : motion direction unit velocity field order moving stage filter response 
+speech : speech signal input network output neural layer system information recognition 
+face : image face images set recognition faces representation pattern task training 
+chip : chip analog neural output circuit weight network system vlsi current 
+classifier : classifier training set classification pattern class error data problem performance 
+control : control planning navigation optimal dynamic trajectory point system process programming 
+boolean : function network weight input threshold number unit neural result set 
+teacher : network error unit training weight input output hidden generalization set 
+missing : data network input neural set training output gaussian distribution problem 
+sound : sound system auditory signal frequency temporal phase localization filter source 
+controller : system controller neural network function forward dynamic feedback error output 
+view : object view recognition unit representation image layer features feature images 
+kernel : kernel data function method vector set space algorithm linear gaussian 
+word : word recognition context training level hmm set system phoneme vector 
+orientation : orientation cortex field pattern map cortical response center spatial stimulus 
+expert : network expert algorithm data output parameter neural system task mixture 
+batch : algorithm error rate convergence batch gradient weight set equation training 
+motor : motor movement system input neuron dynamic output network position field 
+clustering : data algorithm cluster clustering point parameter set space vector number 
+winner : input circuit output current neuron winner unit voltage analog system 
+hopfield : network neural neuron system problem dynamic point pattern equation function 
+channel : channel noise information signal current frequency call component system rate 
+convex : function point vector algorithm solution set problem convex space linear 
+member : set error method training input feature information features performance test 
+rules : network unit rules rule input neural weight set system output 
+letter : unit network hidden letter layer output input weight pattern algorithm 
+user : system neural user data network set training performance vector number 
+carlo : distribution method parameter gaussian algorithm probability data approximation bayesian prior 
+penalty : weight error training set data term function problem method neural 
+robot : robot task action space reinforcement environment map goal problem position 
+contour : image point images direction field contour local map distribution region 
+operator : function system operator vector neural space matrix problem linear equation 
+synapses : neuron input synaptic pattern synapses function activity layer neural connection 
+loss : function loss algorithm bound parameter vector linear distribution gradient case 
+rbf : network training function rbf neural error output input unit weight 
+use down_datasets.sh to download nips and nytimes datasets from UCI ML repo
+preprocessing, translate from docword.txt to scipy format
+preprocessing: removing rare words and stopwords
+Number of words is  102660
+Number of documents is  300000
+New number of words is  54897
+New number of documents is  300000
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(37659, 'candidates')
+('Sum of entries in Q is ', nan)
+('Multiplying Q took ', '15469.941878795624', 'seconds')
+('Q sum is', nan)
+done reading documents
+anchors are:
+0 budgeted
+1 zzz_los_angeles_daily_new
+2 zzz_held
+3 zzz_diane
+4 zzz_hearst_news_service
+5 slugged
+6 sweetest
+7 lewis
+8 quad
+9 zzz_saving
+10 zzz_frankfurt
+11 zzz_seattle_post_intelligencer
+12 zzz_elmore_leonard
+13 zzz_dolphin
+14 ind
+15 ana
+16 inaccuracies
+17 zzz_chuck
+18 zzz_corporation
+19 laureates
+begin threaded recovery with 8 processors
+0	35	0.10639354688
+1000	37	0.106529550662
+2000	43	0.117529044882
+3000	35	0.10532374446
+4000	36	0.10626078751
+5000	35	0.105402039531
+6000	35	0.108349278207
+7000	35	0.106526690537
+8000	33	0.106139695007
+9000	37	0.107309463395
+10000	36	0.105206313837
+11000	31	0.108530451665
+12000	35	0.105430172281
+13000	35	0.104915806117
+14000	36	0.107068254781
+15000	36	0.105655089447
+16000	37	0.107405953179
+17000	36	0.105456504344
+18000	34	0.105989497284
+19000	35	0.106470880499
+20000	35	0.106449089656
+21000	35	0.107171744858
+22000	35	0.106178336022
+23000	33	0.108172964748
+24000	34	0.106433832869
+25000	35	0.105334279958
+26000	31	0.108220770022
+27000	35	0.10666029684
+28000	34	0.107246160421
+29000	43	0.112233294196
+30000	33	0.106420214596
+31000	35	0.106141091554
+32000	44	0.116997563933
+33000	37	0.107141030858
+34000	37	0.107697661982
+35000	36	0.106215290775
+36000	35	0.105186040657
+37000	33	0.106473738394
+38000	36	0.106292075266
+39000	34	0.106093851031
+40000	36	0.104780861907
+41000	39	0.105848940246
+42000	35	0.10468911997
+43000	37	0.108687603748
+44000	34	0.107178495166
+45000	35	0.114154884485
+46000	35	0.105787192655
+47000	31	0.106610327332
+48000	35	0.105243258472
+49000	36	0.107302184379
+50000	38	0.106354493285
+51000	36	0.111590900873
+52000	39	0.111768169336
+53000	39	0.102230139487
+54000	33	0.107245334527
+done recovering
+budgeted : budgeted percent million team company official game season president home 
+zzz_los_angeles_daily_new : zzz_los_angeles_daily_new spot percent zzz_new_york million team company game official season 
+zzz_held : zzz_held guard released send premature advisory percent million team company 
+zzz_diane : question zzz_diane copy fall percent million company team official president 
+zzz_hearst_news_service : percent million official team company president zzz_hearst_news_service game government school 
+slugged : slugged tonight zzz_xxx percent question million team game company season 
+sweetest : percent million team company official game season play president home 
+lewis : percent million team company official game season president play home 
+quad : percent million team company game official season play point president 
+zzz_saving : percent million company team official game season president point home 
+zzz_frankfurt : percent million company team official game season president point home 
+zzz_seattle_post_intelligencer : percent million team company official game season point play home 
+zzz_elmore_leonard : percent million team company official game season president play home 
+zzz_dolphin : percent million team company game official season question play point 
+ind : percent million team company official game season president group home 
+ana : percent million team company official game season president play home 
+inaccuracies : percent million team company official game season president play home 
+zzz_chuck : percent million team company official game season zzz_new_york tonight play 
+zzz_corporation : percent million company team official game season president point home 
+laureates : percent million team company official game season president home point 
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(37659, 'candidates')
+('Sum of entries in Q is ', nan)
+('Multiplying Q took ', '12983.223175525665', 'seconds')
+('Q sum is', nan)
+done reading documents
+anchors are:
+0 budgeted
+1 zzz_los_angeles_daily_new
+2 zzz_held
+3 zzz_diane
+4 zzz_hearst_news_service
+5 slugged
+6 sweetest
+7 lewis
+8 quad
+9 zzz_saving
+10 zzz_frankfurt
+11 zzz_seattle_post_intelligencer
+12 zzz_elmore_leonard
+13 zzz_dolphin
+14 ind
+15 ana
+16 inaccuracies
+17 zzz_chuck
+18 zzz_corporation
+19 laureates
+20 gen
+21 zzz_cos
+22 zzz_cider_house_rules
+23 zzz_osaka
+24 zzz_anne_kornblut
+25 zzz_arizona_republic
+26 zzz_alberto_gonzales
+27 utilization
+28 copy
+29 zzz_marisleysis_gonzalez
+30 inadvertently
+31 premature
+32 zzz_j_p_morgan_securities
+33 zzz_pdt
+34 uninvited
+35 recopilacion
+36 zzz_jewel
+37 tonight
+38 zzz_kathie_lee_gifford
+39 advisory
+40 nerdy
+41 zzz_texas_health_science_center
+42 zzz_illustrated
+43 zzz_attn
+44 zzz_house_votes
+45 xxx
+46 zzz_chicago_white_sox
+47 corrective
+48 compressor
+49 zzz_gov
+begin threaded recovery with 8 processors
+0	86	0.0700313209452
+1000	50	0.0630328988773
+2000	372	0.200256959105
+3000	97	0.062722956323
+4000	90	0.0667822617509
+5000	152	0.0722263820391
+6000	86	0.0677838081299
+7000	84	0.059718230456
+8000	89	0.0835660534209
+9000	56	0.0751071248278
+10000	86	0.0844309370191
+11000	108	0.0696798864589
+12000	82	0.0844460842834
+13000	105	0.0638265302657
+14000	87	0.0737731091043
+15000	95	0.0646663080647
+16000	75	0.070224058372
+17000	59	0.0672551940401
+18000	122	0.0685710754919
+19000	77	0.0696462531339
+20000	73	0.0695273246886
+21000	113	0.0693582114482
+22000	71	0.0684987364222
+23000	46	0.0927256717215
+24000	115	0.0676691327807
+25000	102	0.0882161843878
+26000	98	0.093492531994
+27000	70	0.0718927629915
+28000	98	0.0747871298751
+29000	278	0.187876874741
+30000	84	0.0692194839139
+31000	91	0.0714905856551
+32000	256	0.194682928184
+33000	89	0.0798670083253
+34000	144	0.0933535478218
+35000	80	0.0689653524324
+36000	107	0.0734994482507
+37000	173	0.143463950735
+38000	128	0.0946290420137
+39000	132	0.0710481357701
+40000	109	0.0563140024459
+41000	66	0.0617390517442
+42000	65	0.0764398123379
+43000	102	0.128235119273
+44000	165	0.117394523537
+45000	171	0.149543354341
+46000	181	0.0590340920767
+47000	78	0.0692536254086
+48000	81	0.0701089794192
+49000	101	0.09216727283
+50000	104	0.103981139054
+51000	162	0.166073795661
+52000	171	0.204842459088
+53000	138	0.167858618991
+54000	75	0.0693095768572
