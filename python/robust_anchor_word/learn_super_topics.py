@@ -124,12 +124,12 @@ print("learning super topics")
 
 # anchors is python list
 anchrs_idx = np.array(anchors)
-Qss = Q[np.ix_(anchors, anchors)
+Qss = Q[np.ix_(anchors, anchors)]
 D = A[anchors, :]
 
 from scipy import linalg
 # topic - topic co-occurence matrix
-R = np.dot(linalg.inv(D), Qss.dot(linalg.inv(D))
+R = np.dot(linalg.inv(D), Qss.dot(linalg.inv(D)))
 
 print("printing R matrix")
 print(R)

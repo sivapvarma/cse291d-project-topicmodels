@@ -1,0 +1,94 @@
+starting robust spectral demo
+use down_datasets.sh to download nips and nytimes datasets from UCI ML repo
+preprocessing, translate from docword.txt to scipy format
+preprocessing: removing rare words and stopwords
+learning with nonnegative recover method using L2 loss...
+filename: settings.example
+['max_threads', '8']
+['log_prefix', 'log']
+['checkpoint_prefix', 'checkpoint']
+['new_dim', '1000']
+['eps', '10e-7']
+['seed', '100']
+['top_words', '10']
+['anchor_thresh', '100']
+identifying candidate anchors
+(1735, 'candidates')
+('Sum of entries in Q is ', 1.0)
+('Multiplying Q took ', '0.678321123123169', 'seconds')
+type(Q): <class 'numpy.ndarray'>
+rectifying Q now
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+type(C_star): <class 'numpy.matrixlib.defmatrix.matrix'>
+Test for Non-Negativity:  True
+Done rectifying!!
+('Q sum is', 1.0000355324168522)
+done reading documents
+anchors are:
+0 neuroscience
+1 part
+2 giles
+3 visual
+4 policy
+5 synapses
+6 iii
+7 membrane
+8 architecture
+9 retina
+begin threaded recovery with 8 processors
+0	47	0.657033110195
+1000	65	0.442369959687
+2000	55	0.501508254746
+done recovering
+neuroscience : implementation neuroscience application cognitive science theory processing navigation control planning 
+part : part cognitive science network theory signal speech control chip navigation 
+giles : network neural unit input training weight function set output error 
+visual : processing visual speech signal data recognition set network unit image 
+policy : function algorithm data set problem method vector parameter result point 
+synapses : neuron synaptic circuit synapses connection threshold function activity chip network 
+iii : iii planning navigation theory control science cognitive implementation transistor capacitor 
+membrane : spike firing circuit membrane voltage current cortex cortical control neural 
+architecture : algorithm architecture theory control science application weight neuron circuit expert 
+retina : input system output field pattern information neural signal motion direction 
+learning super topics
+printing R matrix
+[[  5.59958739e-03   2.37303116e+00   0.00000000e+00   6.08329653e-01
+    4.28867196e+00   0.00000000e+00   1.01745984e-01   0.00000000e+00
+    1.32043084e-01   9.13878687e-01]
+ [  4.39827781e-01   2.61665156e-03   1.11244288e-01   3.31003589e-01
+    2.11580694e-01   8.13662552e-03   8.71432272e-02   5.42675608e-03
+    1.02696948e-01   8.50565093e-02]
+ [  0.00000000e+00   2.22479758e+00   2.01227760e+03   1.18788907e+00
+    1.99061705e+02   5.89539685e+01   1.26514493e+00   2.82001540e+01
+    1.39982181e+01   1.70582222e+02]
+ [  1.60295794e-01   4.70583426e-01   8.44436560e-02   9.82041201e-01
+    5.12283503e-01   4.00527103e-01   4.45285088e-02   3.98527532e-01
+    4.38645388e-03   4.64846772e+00]
+ [  3.55048355e+00   9.45064605e-01   4.44590722e+01   1.60950343e+00
+    3.53665475e+02   9.43884332e+00   1.23231267e+00   8.20037187e+00
+    5.11329202e+00   3.78994587e+01]
+ [  0.00000000e+00   4.19786326e-02   1.52084243e+01   1.45348965e+00
+    1.09022786e+01   4.66985634e+00   4.62378210e-02   3.47050776e+00
+    7.61651906e-02   1.99053724e+01]
+ [  1.36239788e-01   6.29565771e-01   4.57019746e-01   2.26277669e-01
+    1.99316349e+00   6.47471816e-02   5.58279470e-02   3.99475760e-02
+    7.99514396e-02   3.16976384e-01]
+ [  0.00000000e+00   4.29111495e-02   1.11498376e+01   2.21658429e+00
+    1.45170353e+01   5.31910921e+00   4.37232875e-02   4.10263008e+00
+    3.23201842e-02   2.53556568e+01]
+ [  4.10831026e-02   1.72395487e-01   1.17497420e+00   5.17938268e-03
+    1.92169072e+00   2.47822613e-02   1.85774960e-02   6.86139368e-03
+    4.87295664e-02   0.00000000e+00]
+ [  1.82263466e+00   9.15249320e-01   9.17810124e+01   3.51833959e+01
+    9.13018142e+01   4.15162585e+01   4.72118803e-01   3.45045905e+01
+    0.00000000e+00   2.71009612e+02]]
+Done saving R matrix

@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "starting robust spectral demo"
-for corpus in nips kos
+for corpus in nips
 do
     echo "use down_datasets.sh to download nips and nytimes datasets from UCI ML repo"
     # echo "downloading UCI $corpus corpus"
@@ -11,15 +11,15 @@ do
     # gunzip docword.$corpus.txt.gz
 
     echo "preprocessing, translate from docword.txt to scipy format"
-    python uci_to_scipy.py docword.$corpus.txt M_$corpus.full_docs.mat
+    # python uci_to_scipy.py docword.$corpus.txt M_$corpus.full_docs.mat
     echo "preprocessing: removing rare words and stopwords"
-    python truncate_vocabulary.py M_$corpus.full_docs.mat vocab.$corpus.txt 50
+    # python truncate_vocabulary.py M_$corpus.full_docs.mat vocab.$corpus.txt 50
     for loss in L2
     do
-        for K in 10 20
+        for K in 10
         do
             echo "learning with nonnegative recover method using $loss loss..."
-            python learn_topics.py M_$corpus.full_docs.mat.trunc.mat settings.example vocab.$corpus.txt.trunc $K $loss demo_robust_$loss\_out.$corpus.$K
+            python learn_super_topics.py M_$corpus.full_docs.mat.trunc.mat settings.example vocab.$corpus.txt.trunc $K $loss demo_robust_$loss\_out.$corpus.$K
         done
     done
 done
